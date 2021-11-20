@@ -22,3 +22,4 @@
 **Threats**
 
 - Queen is attacking the e-knight.
+![swot](https://user-images.githubusercontent.com/94169797/142735111-cb7ba402-77f8-4605-8bdc-3395ff118bbe.jpg)
