@@ -8,9 +8,9 @@ CXXFLAGS = -std=c11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = chess
+APPNAME = 3_Implementation
 EXT = .c
-SRCDIR = 
+SRCDIR = src
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
@@ -28,7 +28,6 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 ########################################################################
 ####################### Targets beginning here #########################
 ########################################################################
-
 all: $(APPNAME)
 
 # Builds the app
