@@ -125,3 +125,4 @@ This Project will require at least require one player and will take input and pe
 
 - Queen is attacking the e-knight.
 
+![swot](https://user-images.githubusercontent.com/94169797/142977116-7f867501-df24-4943-bcd5-34906aa41cd4.jpg)
