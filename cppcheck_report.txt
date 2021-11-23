@@ -1,0 +1,92 @@
+.github/workflows/chess.c:181:15: warning: Either the condition '(c1+2)!=8' is redundant or the array 'board[8][8]' is accessed at index board[*][8], which is out of bounds. [arrayIndexOutOfBoundsCond]
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+.github/workflows/chess.c:180:51: note: Assuming that condition '(c1+2)!=8' is not redundant
+     if( board[r1+1][c1+2] == ' ' ) {  if( (c1+2) != 8 ) printf( "%d%d, " , r1+1 , c1+2 ) ; }
+                                                  ^
+.github/workflows/chess.c:181:15: note: Array index out of bounds
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+.github/workflows/chess.c:183:15: warning: Either the condition '(c1-1)>-1' is redundant or the array 'board[8][8]' is accessed at index board[*][-1], which is out of bounds. [negativeIndex]
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+.github/workflows/chess.c:178:50: note: Assuming that condition '(c1-1)>-1' is not redundant
+     if( board[r1+2][c1-1] == ' ' ) { if( (c1-1) > -1 ) printf( "%d%d, " , r1+2, c1-1 ) ; }
+                                                 ^
+.github/workflows/chess.c:183:15: note: Negative array index
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+.github/workflows/chess.c:128:10: style: Unused variable: i [unusedVariable]
+     int i , j , n ;
+         ^
+.github/workflows/chess.c:128:14: style: Unused variable: j [unusedVariable]
+     int i , j , n ;
+             ^
+.github/workflows/chess.c:203:18: style: Unused variable: c [unusedVariable]
+     int a , b , c , d ;
+                 ^
+.github/workflows/chess.c:203:22: style: Unused variable: d [unusedVariable]
+     int a , b , c , d ;
+                     ^
+3_Implementations/Multifile/chess.c:181:15: warning: Either the condition '(c1+2)!=8' is redundant or the array 'board[8][8]' is accessed at index board[*][8], which is out of bounds. [arrayIndexOutOfBoundsCond]
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+3_Implementations/Multifile/chess.c:180:51: note: Assuming that condition '(c1+2)!=8' is not redundant
+     if( board[r1+1][c1+2] == ' ' ) {  if( (c1+2) != 8 ) printf( "%d%d, " , r1+1 , c1+2 ) ; }
+                                                  ^
+3_Implementations/Multifile/chess.c:181:15: note: Array index out of bounds
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+3_Implementations/Multifile/chess.c:183:15: warning: Either the condition '(c1-1)>-1' is redundant or the array 'board[8][8]' is accessed at index board[*][-1], which is out of bounds. [negativeIndex]
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+3_Implementations/Multifile/chess.c:178:50: note: Assuming that condition '(c1-1)>-1' is not redundant
+     if( board[r1+2][c1-1] == ' ' ) { if( (c1-1) > -1 ) printf( "%d%d, " , r1+2, c1-1 ) ; }
+                                                 ^
+3_Implementations/Multifile/chess.c:183:15: note: Negative array index
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+3_Implementations/Multifile/chess.c:128:10: style: Unused variable: i [unusedVariable]
+     int i , j , n ;
+         ^
+3_Implementations/Multifile/chess.c:128:14: style: Unused variable: j [unusedVariable]
+     int i , j , n ;
+             ^
+3_Implementations/Multifile/chess.c:203:18: style: Unused variable: c [unusedVariable]
+     int a , b , c , d ;
+                 ^
+3_Implementations/Multifile/chess.c:203:22: style: Unused variable: d [unusedVariable]
+     int a , b , c , d ;
+                     ^
+3_Implementations/chess.c:181:15: warning: Either the condition '(c1+2)!=8' is redundant or the array 'board[8][8]' is accessed at index board[*][8], which is out of bounds. [arrayIndexOutOfBoundsCond]
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+3_Implementations/chess.c:180:51: note: Assuming that condition '(c1+2)!=8' is not redundant
+     if( board[r1+1][c1+2] == ' ' ) {  if( (c1+2) != 8 ) printf( "%d%d, " , r1+1 , c1+2 ) ; }
+                                                  ^
+3_Implementations/chess.c:181:15: note: Array index out of bounds
+     if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
+              ^
+3_Implementations/chess.c:183:15: warning: Either the condition '(c1-1)>-1' is redundant or the array 'board[8][8]' is accessed at index board[*][-1], which is out of bounds. [negativeIndex]
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+3_Implementations/chess.c:178:50: note: Assuming that condition '(c1-1)>-1' is not redundant
+     if( board[r1+2][c1-1] == ' ' ) { if( (c1-1) > -1 ) printf( "%d%d, " , r1+2, c1-1 ) ; }
+                                                 ^
+3_Implementations/chess.c:183:15: note: Negative array index
+     if( board[r1-2][c1-1] == ' ' )
+              ^
+3_Implementations/chess.c:128:10: style: Unused variable: i [unusedVariable]
+     int i , j , n ;
+         ^
+3_Implementations/chess.c:128:14: style: Unused variable: j [unusedVariable]
+     int i , j , n ;
+             ^
+3_Implementations/chess.c:203:18: style: Unused variable: c [unusedVariable]
+     int a , b , c , d ;
+                 ^
+3_Implementations/chess.c:203:22: style: Unused variable: d [unusedVariable]
+     int a , b , c , d ;
+                     ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
