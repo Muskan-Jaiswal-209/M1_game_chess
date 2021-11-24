@@ -18,12 +18,10 @@ Folder               | Description
 
 | Feature Id | Feature |
 | -----------|---------|
-|F_01| Adding the Records  |
-|F_02| Deleting the Records  |
-|F_03| Searching the Records |
-|F_04| Listing the records |
-|F_05| Payment |
-|F_06| Modify the Records|
+|F_01| Detecting the moves  |
+|F_02| Deleting the moves  |
+|F_03| Adding the moves |
+|F_04| Easily moving pieces |
 
 ## Challenges Faced and How Was It Overcome
 
