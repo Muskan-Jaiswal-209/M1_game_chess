@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
+    - name: build
+      run: gcc chess.c -o chess.exe
+    - name: Run
+      run: ./chess.exe
     - name: make check
       run: make check
     - name: make distcheck
