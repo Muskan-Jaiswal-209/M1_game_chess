@@ -58,34 +58,100 @@
 3_Implementations/Multifile/chess.c:203:22: style: Unused variable: d [unusedVariable]
      int a , b , c , d ;
                      ^
-3_Implementations/chess.c:181:15: warning: Either the condition '(c1+2)!=8' is redundant or the array 'board[8][8]' is accessed at index board[*][8], which is out of bounds. [arrayIndexOutOfBoundsCond]
+3_Implementations/chess.c:182:15: warning: Either the condition '(c1+2)!=8' is redundant or the array 'board[8][8]' is accessed at index board[*][8], which is out of bounds. [arrayIndexOutOfBoundsCond]
      if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
               ^
-3_Implementations/chess.c:180:51: note: Assuming that condition '(c1+2)!=8' is not redundant
+3_Implementations/chess.c:181:51: note: Assuming that condition '(c1+2)!=8' is not redundant
      if( board[r1+1][c1+2] == ' ' ) {  if( (c1+2) != 8 ) printf( "%d%d, " , r1+1 , c1+2 ) ; }
                                                   ^
-3_Implementations/chess.c:181:15: note: Array index out of bounds
+3_Implementations/chess.c:182:15: note: Array index out of bounds
      if( board[r1-1][c1+2] == ' ' ) {  printf( "%d%d, " , r1-1 , c1+2 ) ; }
               ^
-3_Implementations/chess.c:183:15: warning: Either the condition '(c1-1)>-1' is redundant or the array 'board[8][8]' is accessed at index board[*][-1], which is out of bounds. [negativeIndex]
+3_Implementations/chess.c:184:15: warning: Either the condition '(c1-1)>-1' is redundant or the array 'board[8][8]' is accessed at index board[*][-1], which is out of bounds. [negativeIndex]
      if( board[r1-2][c1-1] == ' ' )
               ^
-3_Implementations/chess.c:178:50: note: Assuming that condition '(c1-1)>-1' is not redundant
+3_Implementations/chess.c:179:50: note: Assuming that condition '(c1-1)>-1' is not redundant
      if( board[r1+2][c1-1] == ' ' ) { if( (c1-1) > -1 ) printf( "%d%d, " , r1+2, c1-1 ) ; }
                                                  ^
-3_Implementations/chess.c:183:15: note: Negative array index
+3_Implementations/chess.c:184:15: note: Negative array index
      if( board[r1-2][c1-1] == ' ' )
               ^
-3_Implementations/chess.c:128:10: style: Unused variable: i [unusedVariable]
+3_Implementations/chess.h:84:9: style: The scope of the variable 'y' can be reduced. [variableScope]
+    int y, x, cap;
+        ^
+3_Implementations/chess.h:84:12: style: The scope of the variable 'x' can be reduced. [variableScope]
+    int y, x, cap;
+           ^
+3_Implementations/chess.h:84:15: style: The scope of the variable 'cap' can be reduced. [variableScope]
+    int y, x, cap;
+              ^
+3_Implementations/chess.h:196:9: style: The scope of the variable 'x' can be reduced. [variableScope]
+    int x, y, cap;
+        ^
+3_Implementations/chess.h:196:12: style: The scope of the variable 'y' can be reduced. [variableScope]
+    int x, y, cap;
+           ^
+3_Implementations/chess.h:674:11: style: The scope of the variable 'c' can be reduced. [variableScope]
+    char* c;
+          ^
+3_Implementations/chess.h:560:18: portability: Shifting a negative value is technically undefined behaviour [shiftNegativeLHS]
+        if(!(mask>>i & 1)) continue; // check if piece is included
+                 ^
+3_Implementations/chess.h:259:13: style: Local variable 'dy' shadows outer variable [shadowVariable]
+    for(int dy=-1; dy<2; dy++)
+            ^
+3_Implementations/chess.h:258:9: note: Shadowed declaration
+    int dy, dx;
+        ^
+3_Implementations/chess.h:259:13: note: Shadow variable
+    for(int dy=-1; dy<2; dy++)
+            ^
+3_Implementations/chess.h:260:13: style: Local variable 'dx' shadows outer variable [shadowVariable]
+    for(int dx=-1; dx<2; dx++)
+            ^
+3_Implementations/chess.h:258:13: note: Shadowed declaration
+    int dy, dx;
+            ^
+3_Implementations/chess.h:260:13: note: Shadow variable
+    for(int dx=-1; dx<2; dx++)
+            ^
+3_Implementations/chess.h:378:17: style: Local variable 'i' shadows outer variable [shadowVariable]
+        for(int i=0;i<2;i++) free(m[i]);
+                ^
+3_Implementations/chess.h:338:13: note: Shadowed declaration
+    for(int i=1; 1; i=-i)
+            ^
+3_Implementations/chess.h:378:17: note: Shadow variable
+        for(int i=0;i<2;i++) free(m[i]);
+                ^
+3_Implementations/chess.h:696:17: style: Local variable 'v' shadows outer variable [shadowVariable]
+            int v = B.b[i][j];
+                ^
+3_Implementations/chess.h:690:9: note: Shadowed declaration
+    int v, p = -player;
+        ^
+3_Implementations/chess.h:696:17: note: Shadow variable
+            int v = B.b[i][j];
+                ^
+3_Implementations/chess.h:258:9: style: Unused variable: dy [unusedVariable]
+    int dy, dx;
+        ^
+3_Implementations/chess.h:258:13: style: Unused variable: dx [unusedVariable]
+    int dy, dx;
+            ^
+3_Implementations/chess.h:690:9: style: Unused variable: v [unusedVariable]
+    int v, p = -player;
+        ^
+3_Implementations/chess.c:129:10: style: Unused variable: i [unusedVariable]
      int i , j , n ;
          ^
-3_Implementations/chess.c:128:14: style: Unused variable: j [unusedVariable]
+3_Implementations/chess.c:129:14: style: Unused variable: j [unusedVariable]
      int i , j , n ;
              ^
-3_Implementations/chess.c:203:18: style: Unused variable: c [unusedVariable]
+3_Implementations/chess.c:204:18: style: Unused variable: c [unusedVariable]
      int a , b , c , d ;
                  ^
-3_Implementations/chess.c:203:22: style: Unused variable: d [unusedVariable]
+3_Implementations/chess.c:204:22: style: Unused variable: d [unusedVariable]
      int a , b , c , d ;
                      ^
 3_Implementations/unity/unity.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
